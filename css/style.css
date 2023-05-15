@@ -35,7 +35,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #777777;
-  background: url(../img/body-bg.png) no-repeat center;
+  /* background: url(../img/body-bg.png) no-repeat center; */
 }
 
 h1,
@@ -3105,7 +3105,7 @@ h6 {
 }
 @media (max-width: 991px) {
   .about_area .about_img {
-    display: none;
+    display: block;
   }
 }
 
@@ -3916,7 +3916,7 @@ h6 {
     margin-top: 0px;
   }
   .home_banner_area .banner_inner .banner_content .primary_btn {
-    display: none;
+    display: block;
   }
 
   /* Blog Page Area css
@@ -4200,7 +4200,7 @@ h6 {
 }
 .social a:hover {
   transform: scale(1.1);
-  background: #747474;
+  /* background: #000000; */
   transition: 0.4s;
 }
 
@@ -4215,8 +4215,18 @@ h6 {
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
-
+.skill-bars:hover {
+  box-shadow: 10px 10px 5px 0px rgba(77, 87, 222, 0.3);
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
 .skill-bars .bar {
   margin: 20px 0;
 }
@@ -4260,6 +4270,26 @@ h6 {
     transform: scaleX(1);
   }
 }
+/* Add this CSS to your stylesheet to create the animation */
+.animate {
+  width: 100%;
+  transition: width 2s;
+}
+
+.animate span {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .bar .progress-line span {
   height: 100%;
@@ -4270,8 +4300,8 @@ h6 {
   background: #6665ee;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
- /* 0 25 50 75 100  */
- /* hard skills */
+/* 0 25 50 75 100  */
+/* hard skills */
 .bar .progress-line.html span {
   width: 90%;
 }
@@ -4411,10 +4441,10 @@ h6 {
 }
 
 @media (max-width: 768px) {
-  .space{
+  .space {
     margin-bottom: 40px;
   }
-  .img{
+  .img {
     height: 200px;
     width: 300px;
   }
@@ -4442,34 +4472,80 @@ h6 {
     content: attr(data-content);
     display: block;
     height: 10px;
-    background-color: #6665ee;
+    background-color: #a8a8a8ec;
     border-radius: 10px;
-    color: #fff;
-    font-size: 12px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
     text-align: center;
     line-height: 10px;
   }
-
+  .progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
   .html:before {
-    content: "90%";
+    /* content: "advanced"; */
+    width: 90%;
   }
 
   .css:before {
-    content: "90%";
+    /* content: "advanced"; */
+    width: 90%;
   }
 
   .jquery:before {
-    content: "90%";
+    /* content: "good"; */
+    width: 60%;
   }
-
   .python:before {
-    content: "90%";
+    /* content: "advanced"; */
+    width: 80%;
   }
 
   .mysql:before {
-    content: "90%";
+    /* content: "advanced"; */
+    width: 80%;
   }
-  
+
+  .react:before {
+    /* content: "good"; */
+    width: 40%;
+  }
+  .java:before {
+    /* content: "good"; */
+    width: 50%;
+  }
+
+  .vscode:before {
+    width: 90%;
+  }
+
+  .msoffice:before {
+    width: 90%;
+  }
+
+  .figma:before {
+    width: 70%;
+  }
+  .xd:before {
+    width: 70%;
+  }
+  .photoshop:before {
+    width: 70%;
+  }
+  .powerbi:before {
+    width: 50%;
+  }
 }
 .parent {
   display: grid;
@@ -4477,12 +4553,78 @@ h6 {
   grid-template-rows: 1fr;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
-  }
-  
-  .div1 { grid-area: 1 / 1 / 2 / 2; }
-  .div2 { grid-area: 1 / 2 / 2 / 3; }
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+.hero-img {
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(../img/pf.png);
+  /* background-position: 10%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 35rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 35rem;
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+@media (max-width: 500px) {
+  .hero-img {
+    height: 24rem;
+    width: 23rem;
+  }
+}
+.image-container {
+  position: relative;
+  overflow: visible;
+  z-index: 1; /* add this */
+}
+
+.enlarge-image {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.enlarge-image:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+  z-index: 2;
+}
+
+.enlarge-image:active {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+.feature_item {
+  z-index: 0; /* add this */
+}
