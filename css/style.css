@@ -4615,15 +4615,15 @@ h6 {
 }
 
 .enlarge-image:hover {
-  transform: scale(1.5);
+  transform: scale(1.6);
   cursor: zoom-in;
   z-index: 2;
 }
 
-.enlarge-image:active {
+/* .enlarge-image:active {
   transform: scale(2);
   cursor: zoom-out;
-}
+} */
 
 .feature_item {
   z-index: 0; /* add this */
