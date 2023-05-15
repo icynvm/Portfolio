@@ -4615,7 +4615,7 @@ h6 {
 }
 
 .enlarge-image:hover {
-  transform: scale(1.6);
+  transform: scale(1.4);
   cursor: zoom-in;
   z-index: 2;
 }
