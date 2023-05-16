@@ -127,7 +127,11 @@ button:focus {
     padding-bottom: 80px;
   }
 }
-
+.main_typing {
+  height: 400px;
+  overflow: auto;
+  /* other styles */
+}
 /* Main Title Area css
 ============================================================================================ */
 .main_title {
