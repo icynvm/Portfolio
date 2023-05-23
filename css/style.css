@@ -1372,6 +1372,9 @@ button:focus {
   .comments-area {
     padding: 50px 8px;
   }
+  .skills-logo{
+    margin-left:14px !important;
+  }
 }
 .comments-area h4 {
   text-align: center;
@@ -4707,7 +4710,7 @@ h6 {
     max-width: 100%;
   }
   .skill-bars-space{
-    margin-left:110px ;
+    margin-left:115px ;
   }
   .skills-logo img{
     width: 50px;
