@@ -4702,12 +4702,12 @@ h6 {
 }
 
 /* ipad view */
-@media (min-width: 600px) and (max-width:640px) {
+@media (min-width: 600px) and (max-width: 640px) {
   .col-md-8{
     max-width: 100%;
   }
   .skill-bars-space{
-    margin-left:105px ;
+    margin-left:110px ;
   }
   .skills-logo img{
     width: 50px;
