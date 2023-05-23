@@ -4741,3 +4741,28 @@ h6 {
   }
 
 }
+@media (min-width: 370px) and (max-width:440px) {
+  .skill-bars{
+    padding: 25px 30px;
+    width: 380px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    margin-bottom: 40px;
+  }
+  img{
+    width: 220px;
+    height: 170px;
+  }
+  .skill-bars-space{
+        margin-left: 0px;
+  }
+  .skills-logo img{
+    width: 50px;
+    height: 40px;
+  }
+}
