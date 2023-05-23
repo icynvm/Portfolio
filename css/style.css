@@ -4462,7 +4462,7 @@ h6 {
   content: "basic";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
   .space {
     margin-bottom: 40px;
   }
@@ -4710,14 +4710,14 @@ h6 {
     max-width: 100%;
   }
   .skill-bars-space{
-    margin-left:115px ;
+    margin-left:0 ;
   }
   .skills-logo img{
     width: 50px;
     height: 50px;
   }
   .skills-logo{
-    margin-left: 130px;
+    margin-left: 40px;
   }
   img{
     width: 200px;
@@ -4727,9 +4727,9 @@ h6 {
     width: 370px;
     height: 230px;
   }
- #project-design{
+ /* #project-design{
     margin-left: 120px;
-  }
+  } */
   #uxui{
     height:150px;
   }
