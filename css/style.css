@@ -4702,7 +4702,7 @@ h6 {
 }
 
 /* ipad view */
-@media (min-width: 820px) {
+@media (min-width: 620px) and (max-width:820px) {
   .col-md-8{
     max-width: 100%;
   }
