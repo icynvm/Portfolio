@@ -4765,4 +4765,7 @@ h6 {
     width: 50px;
     height: 40px;
   }
+  #vg{
+    display:none;
+    }
 }
