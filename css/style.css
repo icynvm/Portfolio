@@ -4766,6 +4766,6 @@ h6 {
     height: 40px;
   }
   #vg{
-    display: none;
+    display: none !important;
     }
 }
